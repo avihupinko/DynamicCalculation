@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row mt-2" *ngIf="!!task">
+        <div class="col-12">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <p class="mb-0">X</p>
+                        </div>
+                        <div class="col-sm-7">
+                            <p class="text-muted mb-0">{{task.x}}</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <p class="mb-0">Y</p>
+                        </div>
+                        <div class="col-sm-7">
+                            <p class="text-muted mb-0">{{task.y}}</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <p class="mb-0">Result</p>
+                        </div>
+                        <div class="col-sm-7">
+                            <p class="text-muted mb-0">{{task.result}}</p>
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <p class="mb-0">Created</p>
+                        </div>
+                        <div class="col-sm-7">
+                            <p class="text-muted mb-0"> {{task.created | date: 'dd/MM/yyyy' }}</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
